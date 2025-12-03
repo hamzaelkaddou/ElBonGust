@@ -18,10 +18,10 @@ Amb aquest projecte es vol modernitzar el sistema, però sense perdre l’estil 
 lloc. L’objectiu és fer que la feina del personal sigui més fàcil i que tot el procés “des que el
 client arriba fins que paga” sigui més ràpid i eficient.
 ### Objectius principals:
-● Digitalitzar la gestió de comandes i reserves.
-● Reduir errors i temps d’espera.
-● Millorar la comunicació entre sala i cuina.
-● Fer que l’experiència del client sigui més fluida i moderna.
+- Digitalitzar la gestió de comandes i reserves.
+- Reduir errors i temps d’espera.
+- Millorar la comunicació entre sala i cuina.
+- Fer que l’experiència del client sigui més fluida i moderna.
 
 ## Abast del projecte
 ### Objectiu general
@@ -29,44 +29,44 @@ Digitalitzar el restaurant “El Bon Gust” per aconseguir una gestió eficient
 i orientada al client.
 
 ### Objectius específics
-● Instal·lar i mantenir equips informàtics i TPVs.
-● Implementar sistemes operatius monolloc i en xarxa segons la funció de cada
+- Instal·lar i mantenir equips informàtics i TPVs.
+- Implementar sistemes operatius monolloc i en xarxa segons la funció de cada
 dispositiu.
-● Utilitzar aplicacions ofimàtiques per inventari, facturació i informes.
-● Crear i mantenir xarxes locals segures.
-● Garantir la seguretat informàtica i les còpies de seguretat.
-● Desenvolupar aplicacions web per reserves i comandes online.
-● Formar el personal en anglès professional bàsic per atendre clients internacionals.
-● Aplicar digitalització i sostenibilitat en processos productius.
-● Definir itineraris de formació per a l’ocupabilitat del personal.
-● TPVs per comandar i cobrar.
-● Ordinadors per cuina, magatzem i administració.
-● Tablets per cambrers connectades a la xarxa interna.
-● TPVs amb Windows o Linux dedicats.
-● Comptes d’usuari amb permisos limitats segons funció.
-● Programari específic instal·lat: gestió de comandes i facturació.
-● Fulls de càlcul per inventari, càlcul de costos i anàlisi de vendes.
-● Documents i plantilles per menús, factures i informes.
-● Integració amb programari de gestió administrativa.
-● Compartició de carpetes i bases de dades entre TPVs, cuina i administració.
-● Permisos d’accés diferenciats segons el rol del personal.
-● Xarxa interna amb router i switch per connectar TPVs, ordinadors i tablets.
-● Xarxa Wi-Fi separada per clients
-● Antivirus, tallafocs i autenticació de dos factors.
-● Còpies de seguretat automàtiques del sistema i dades.
-● Servidor local per inventari i bases de dades.
-● Servidor de correu per comunicació amb proveïdors i clients.
-● Accés remot per administradors fora del restaurant.
-● Web amb menús, horaris i fotos del restaurant.
-● Sistema de reserves i comandes online amb pagament segur.
-● Adaptació per mòbil la web amb el movil.
-● Traducció del menú i web a anglès.
-● Formació del personal en vocabulari bàsic per atendre clients estrangers.
-● Processos digitals per comandes, inventari, vendes i informes.
-● Software per calcular demanda i planificar compres i producció.
-● Reducció de paper i comunicació digital amb proveïdors.
-● Compra de productes locals i de temporada.
-● Conèixer les senyals d’emergència i d’evacuació del restaurant.
-● Utilitzar els equips de protecció individual com guants, davantal i calçat antilliscant.
-● Comunicar-se de manera clara amb els companys per coordinar tasques i evitar
+- Utilitzar aplicacions ofimàtiques per inventari, facturació i informes.
+- Crear i mantenir xarxes locals segures.
+- Garantir la seguretat informàtica i les còpies de seguretat.
+- Desenvolupar aplicacions web per reserves i comandes online.
+- Formar el personal en anglès professional bàsic per atendre clients internacionals.
+- Aplicar digitalització i sostenibilitat en processos productius.
+- Definir itineraris de formació per a l’ocupabilitat del personal.
+- TPVs per comandar i cobrar.
+- Ordinadors per cuina, magatzem i administració.
+- Tablets per cambrers connectades a la xarxa interna.
+- TPVs amb Windows o Linux dedicats.
+- Comptes d’usuari amb permisos limitats segons funció.
+- Programari específic instal·lat: gestió de comandes i facturació.
+- Fulls de càlcul per inventari, càlcul de costos i anàlisi de vendes.
+- Documents i plantilles per menús, factures i informes.
+- Integració amb programari de gestió administrativa.
+- Compartició de carpetes i bases de dades entre TPVs, cuina i administració.
+- Permisos d’accés diferenciats segons el rol del personal.
+- Xarxa interna amb router i switch per connectar TPVs, ordinadors i tablets.
+- Xarxa Wi-Fi separada per clients
+- Antivirus, tallafocs i autenticació de dos factors.
+- Còpies de seguretat automàtiques del sistema i dades.
+- Servidor local per inventari i bases de dades.
+- Servidor de correu per comunicació amb proveïdors i clients.
+- Accés remot per administradors fora del restaurant.
+- Web amb menús, horaris i fotos del restaurant.
+- Sistema de reserves i comandes online amb pagament segur.
+- Adaptació per mòbil la web amb el movil.
+- Traducció del menú i web a anglès.
+- Formació del personal en vocabulari bàsic per atendre clients estrangers.
+- Processos digitals per comandes, inventari, vendes i informes.
+- Software per calcular demanda i planificar compres i producció.
+- Reducció de paper i comunicació digital amb proveïdors.
+- Compra de productes locals i de temporada.
+- Conèixer les senyals d’emergència i d’evacuació del restaurant.
+- Utilitzar els equips de protecció individual com guants, davantal i calçat antilliscant.
+- Comunicar-se de manera clara amb els companys per coordinar tasques i evitar
 incidents.

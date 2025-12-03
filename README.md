@@ -1,5 +1,5 @@
 # ElBonGust
-##Resum executiu (Abstract)
+## Resum executiu (Abstract)
 Aquest projecte sorgeix de la necessitat d’actualitzar un restaurant molt tradicional i amb
 molts clients, on encara es prenen les comandes amb paper i bolígraf, i la carta només està
 disponible en format físic. Tot i que aquest sistema encara funciona, sovint causa errors i fa
@@ -8,7 +8,7 @@ La meva proposta és crear un sistema digital senzill i fàcil d’utilitzar que
 cambrers prendre les comandes amb tauletes o mòbils, oferir la carta mitjançant un codi QR
 i gestionar millor les reserves. Amb aquesta millora, el restaurant podrà treballar de manera
 més ràpida i organitzada, i alhora oferir una experiència més còmoda i moderna als clients.
-##Context i situació inicial
+## Context i situació inicial
 “El Bon Gust” és un restaurant molt conegut i amb molta gent, sobretot a les hores punta. El
 principal problema és que encara fan servir un sistema molt antic: els cambrers apunten les
 comandes amb paper, les passen a cuina parlant o amb notes, i les reserves es fan per
@@ -17,18 +17,18 @@ Això fa que, quan el restaurant està ple, hi hagi errors, retards i confusions
 Amb aquest projecte es vol modernitzar el sistema, però sense perdre l’estil tradicional del
 lloc. L’objectiu és fer que la feina del personal sigui més fàcil i que tot el procés “des que el
 client arriba fins que paga” sigui més ràpid i eficient.
-###Objectius principals:
+### Objectius principals:
 ● Digitalitzar la gestió de comandes i reserves.
 ● Reduir errors i temps d’espera.
 ● Millorar la comunicació entre sala i cuina.
 ● Fer que l’experiència del client sigui més fluida i moderna.
 
-##Abast del projecte
-###Objectiu general
+## Abast del projecte
+### Objectiu general
 Digitalitzar el restaurant “El Bon Gust” per aconseguir una gestió eficient, segura, sostenible
 i orientada al client.
 
-###Objectius específics
+### Objectius específics
 ● Instal·lar i mantenir equips informàtics i TPVs.
 ● Implementar sistemes operatius monolloc i en xarxa segons la funció de cada
 dispositiu.

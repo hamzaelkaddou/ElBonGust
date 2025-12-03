@@ -1,5 +1,5 @@
 # ElBonGust
-Resum executiu (Abstract)
+##Resum executiu (Abstract)
 Aquest projecte sorgeix de la necessitat d’actualitzar un restaurant molt tradicional i amb
 molts clients, on encara es prenen les comandes amb paper i bolígraf, i la carta només està
 disponible en format físic. Tot i que aquest sistema encara funciona, sovint causa errors i fa
@@ -8,7 +8,7 @@ La meva proposta és crear un sistema digital senzill i fàcil d’utilitzar que
 cambrers prendre les comandes amb tauletes o mòbils, oferir la carta mitjançant un codi QR
 i gestionar millor les reserves. Amb aquesta millora, el restaurant podrà treballar de manera
 més ràpida i organitzada, i alhora oferir una experiència més còmoda i moderna als clients.
-Context i situació inicial
+##Context i situació inicial
 “El Bon Gust” és un restaurant molt conegut i amb molta gent, sobretot a les hores punta. El
 principal problema és que encara fan servir un sistema molt antic: els cambrers apunten les
 comandes amb paper, les passen a cuina parlant o amb notes, i les reserves es fan per
@@ -17,20 +17,18 @@ Això fa que, quan el restaurant està ple, hi hagi errors, retards i confusions
 Amb aquest projecte es vol modernitzar el sistema, però sense perdre l’estil tradicional del
 lloc. L’objectiu és fer que la feina del personal sigui més fàcil i que tot el procés “des que el
 client arriba fins que paga” sigui més ràpid i eficient.
-Objectius principals:
+###Objectius principals:
 ● Digitalitzar la gestió de comandes i reserves.
 ● Reduir errors i temps d’espera.
 ● Millorar la comunicació entre sala i cuina.
 ● Fer que l’experiència del client sigui més fluida i moderna.
 
-2
-
-Abast del projecte
-Objectiu general
+##Abast del projecte
+###Objectiu general
 Digitalitzar el restaurant “El Bon Gust” per aconseguir una gestió eficient, segura, sostenible
 i orientada al client.
 
-Objectius específics
+###Objectius específics
 ● Instal·lar i mantenir equips informàtics i TPVs.
 ● Implementar sistemes operatius monolloc i en xarxa segons la funció de cada
 dispositiu.
@@ -41,55 +39,33 @@ dispositiu.
 ● Formar el personal en anglès professional bàsic per atendre clients internacionals.
 ● Aplicar digitalització i sostenibilitat en processos productius.
 ● Definir itineraris de formació per a l’ocupabilitat del personal.
-
-Muntatge i manteniment d’equips
 ● TPVs per comandar i cobrar.
 ● Ordinadors per cuina, magatzem i administració.
 ● Tablets per cambrers connectades a la xarxa interna.
-
-Sistemes operatius monolloc
 ● TPVs amb Windows o Linux dedicats.
 ● Comptes d’usuari amb permisos limitats segons funció.
 ● Programari específic instal·lat: gestió de comandes i facturació.
-
-3
-
-Aplicacions ofimàtiques
 ● Fulls de càlcul per inventari, càlcul de costos i anàlisi de vendes.
 ● Documents i plantilles per menús, factures i informes.
 ● Integració amb programari de gestió administrativa.
-Sistemes operatius en xarxa
 ● Compartició de carpetes i bases de dades entre TPVs, cuina i administració.
 ● Permisos d’accés diferenciats segons el rol del personal.
-Xarxes locals
 ● Xarxa interna amb router i switch per connectar TPVs, ordinadors i tablets.
 ● Xarxa Wi-Fi separada per clients
-Seguretat informàtica
 ● Antivirus, tallafocs i autenticació de dos factors.
 ● Còpies de seguretat automàtiques del sistema i dades.
-Serveis de xarxa
 ● Servidor local per inventari i bases de dades.
 ● Servidor de correu per comunicació amb proveïdors i clients.
 ● Accés remot per administradors fora del restaurant.
-Aplicacions web
 ● Web amb menús, horaris i fotos del restaurant.
 ● Sistema de reserves i comandes online amb pagament segur.
 ● Adaptació per mòbil la web amb el movil.
-Anglès Professional
 ● Traducció del menú i web a anglès.
 ● Formació del personal en vocabulari bàsic per atendre clients estrangers.
-
-4
-
-Digitalització aplicada als sectors productius
 ● Processos digitals per comandes, inventari, vendes i informes.
 ● Software per calcular demanda i planificar compres i producció.
-
-Sostenibilitat aplicada al sistema productiu
 ● Reducció de paper i comunicació digital amb proveïdors.
 ● Compra de productes locals i de temporada.
-
-Itinerari personal per a l’ocupabilitat I i II
 ● Conèixer les senyals d’emergència i d’evacuació del restaurant.
 ● Utilitzar els equips de protecció individual com guants, davantal i calçat antilliscant.
 ● Comunicar-se de manera clara amb els companys per coordinar tasques i evitar

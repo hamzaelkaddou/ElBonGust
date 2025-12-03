@@ -70,3 +70,15 @@ dispositiu.
 - Utilitzar els equips de protecció individual com guants, davantal i calçat antilliscant.
 - Comunicar-se de manera clara amb els companys per coordinar tasques i evitar
 incidents.
+## Ens els moduls que ens basarem:
+- M01 Muntatge i manteniment
+- M02 Sistemes operatius monolloc
+- M03 Aplicacions ofimàtiques
+- M04 Sistemes operatius en xarxa
+- M05 Xarxes locals
+- M06 Seguretat informàtica
+- M07 Serveis de xarxa
+- M08 Aplicacions web
+- M09 Formació i orientació laboral
+- M10 Empresa i iniciativa emprenedora
+- M11 Anglès tècnic

@@ -82,33 +82,33 @@ incidents.
 - M09 Formació i orientació laboral
 - M10 Empresa i iniciativa emprenedora
 - M11 Anglès tècnic
-##Fases del projecte
-###1. Anàlisi i planificació
+## Fases del projecte
+### 1. Anàlisi i planificació
 - Revisió dels processos actuals del restaurant.
 - Identificació de necessitats (TPVs, tablets, xarxa, programari).
 - Definició d’objectius i abast del projecte.
-###2. Instal·lació i configuració d'equipament
+### 2. Instal·lació i configuració d'equipament
 - Instal·lació de TPVs, ordinadors i tablets.
 - Configuració de sistemes operatius monolloc.
 - Creació de comptes d’usuari i permisos.
-###3. Xarxes i seguretat
+### 3. Xarxes i seguretat
 - Implementació de la xarxa interna i Wi-Fi per clients.
 - Configuració de servidor local i servidor de correu.
 - Instal·lació d’antivirus, tallafocs i còpies de seguretat.
-###4. Programari i aplicacions
+### 4. Programari i aplicacions
 - Configuració d’aplicacions ofimàtiques (inventari, costos, factures).
 - Desenvolupament de l’aplicació web amb carta digital, reserves i comandes online.
 - Integració del codi QR per accedir a la carta.
-###5. Formació i proves
+### 5. Formació i proves
 - Formació del personal sobre l’ús dels TPVs, tablets i aplicació web.
 - Formació d’anglès professional bàsic.
 - Proves de comunicació sala–cuina i validació de sistema.
-###6. Implantació i manteniment
+### 6. Implantació i manteniment
 - Posada en marxa del sistema digital.
 - Correcció d’errors i ajustos finals.
 - Manteniment periòdic del sistema, equipament i xarxa.
 
-##Cronograma
+## Cronograma
 | Setmana | Tasca                     |
 | ------- | ------------------------- |
 | 1       | Anàlisi i planificació    |
@@ -121,12 +121,12 @@ incidents.
 | 9       | Proves i ajustos          |
 | 10      | Implantació final         |
 
-##Treball en equip i rols
-###Administrador de sistemes
+## Treball en equip i rols
+### Administrador de sistemes
 Configura TPVs, xarxes, servidors i seguretat.
-###Desenvolupador web
+### Desenvolupador web
 Crea la web, la carta digital i les reserves.
-###Tècnic de suport
+### Tècnic de suport
 Manté els equips i resol incidències.
-###Formador
+### Formador
 Explica l’ús del sistema i fa formació bàsica d’anglès professional.

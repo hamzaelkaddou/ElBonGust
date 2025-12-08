@@ -83,43 +83,50 @@ incidents.
 - M10 Empresa i iniciativa emprenedora
 - M11 Anglès tècnic
 ## Fases del projecte
-### 1. Anàlisi i planificació
-- Revisió dels processos actuals del restaurant.
-- Identificació de necessitats (TPVs, tablets, xarxa, programari).
-- Definició d’objectius i abast del projecte.
-### 2. Instal·lació i configuració d'equipament
-- Instal·lació de TPVs, ordinadors i tablets.
-- Configuració de sistemes operatius monolloc.
-- Creació de comptes d’usuari i permisos.
-### 3. Xarxes i seguretat
-- Implementació de la xarxa interna i Wi-Fi per clients.
-- Configuració de servidor local i servidor de correu.
-- Instal·lació d’antivirus, tallafocs i còpies de seguretat.
-### 4. Programari i aplicacions
-- Configuració d’aplicacions ofimàtiques (inventari, costos, factures).
-- Desenvolupament de l’aplicació web amb carta digital, reserves i comandes online.
-- Integració del codi QR per accedir a la carta.
-### 5. Formació i proves
-- Formació del personal sobre l’ús dels TPVs, tablets i aplicació web.
-- Formació d’anglès professional bàsic.
-- Proves de comunicació sala–cuina i validació de sistema.
-### 6. Implantació i manteniment
-- Posada en marxa del sistema digital.
-- Correcció d’errors i ajustos finals.
-- Manteniment periòdic del sistema, equipament i xarxa.
+### Fase 1 – Bàsic 
+- Digitalitzar el restaurant “El Bon Gust” amb TPVs i tablets.
+- Mostrar la carta mitjançant un codi QR.
+- Gestionar les reserves de manera digital.
+- Millorar l’eficiència i l’experiència del client sense perdre l’estil tradicional.
 
-## Cronograma
-| Setmana | Tasca                     |
-| ------- | ------------------------- |
-| 1       | Anàlisi i planificació    |
-| 2       | Instal·lació d’equipament |
-| 3       | Xarxes i Wi-Fi            |
-| 4       | Seguretat i còpies        |
-| 5       | Programari i ofimàtica    |
-| 6–7     | Web, reserves i QR        |
-| 8       | Formació al personal      |
-| 9       | Proves i ajustos          |
-| 10      | Implantació final         |
+### Fase 2 – Complet
+- Instal·lació i configuració de TPVs, tablets i ordinadors.
+- Implementació de xarxes locals i Wi-Fi per clients i personal.
+- Seguretat informàtica: antivirus, tallafocs i còpies de seguretat automàtiques.
+- Programari ofimàtic per inventari, facturació i informes.
+- Aplicació web amb:
+  - Carta digital
+  - Reserves online
+  - Comandes online amb codi QR
+- Formació del personal, incloent anglès professional bàsic.
+- Digitalització dels processos per reduir errors i agilitzar la comunicació sala–cuina.
+- Integració de processos sostenibles: reducció de paper i compres responsables.
+- Experiència client més moderna i fluida.
+
+## Cronograma Fase 1 – Bàsic
+Setmana | Tasca
+--------|------
+1       | Anàlisi dels processos actuals i identificació de necessitats bàsiques (TPVs, tablets, carta digital, reserves)
+2       | Instal·lació i configuració inicial de TPVs i tablets
+3       | Implementació del sistema de carta digital amb QR
+4       | Configuració bàsica de gestió de reserves
+5       | Prova inicial del sistema i ajustos mínims
+6       | Formació ràpida del personal sobre l’ús de TPVs i carta digital
+7       | Posada en marxa del sistema i seguiment inicial
+
+## Cronograma Fase 2 – Complet
+Setmana | Tasca
+--------|------
+1       | Revisió completa dels processos actuals i definició d’objectius i abast del projecte
+2       | Instal·lació de TPVs, tablets i ordinadors a cuina, sala i administració
+3       | Implementació de xarxes locals i Wi-Fi per clients i personal
+4       | Configuració de seguretat: antivirus, tallafocs i còpies de seguretat automàtiques
+5       | Instal·lació i configuració d’aplicacions ofimàtiques (inventari, facturació, informes)
+6–7     | Desenvolupament i integració de l’aplicació web amb carta digital, reserves i comandes online
+8       | Formació completa del personal en ús de TPVs, tablets i aplicació web
+9       | Formació en anglès professional bàsic i processos digitals
+10      | Proves de comunicació sala–cuina, validació final i ajustos
+11      | Posada en marxa definitiva del sistema i inici del manteniment periòdic
 
 ## Treball en equip i rols
 ### Administrador de sistemes

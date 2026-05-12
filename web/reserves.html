@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserves – ElBonGust</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-hero::before {
+      background-image: url('https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1400&q=80');
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ElBon<span>Gust</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="qui-som.html">Qui Som</a></li>
+          <li class="nav-item"><a class="nav-link" href="carta.html">La Carta</a></li>
+          <li class="nav-item"><a class="nav-link" href="serveis.html">Serveis</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
+          <li class="nav-item ms-2">
+            <a class="btn btn-gold-fill active" href="reserves.html">Reserves</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero" style="margin-top:72px;">
+    <div class="hero-content">
+      <h1>Reserves</h1>
+      <div class="gold-bar"></div>
+      <p>Reserva la teva taula i assegura't una experiència inoblidable</p>
+    </div>
+  </header>
+
+  <section class="section-dark section-pad">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="text-center mb-4">
+            <h2 class="section-title">Sol·licita la teva reserva</h2>
+            <div class="gold-divider centered"></div>
+            <p class="text-soft">Omple el formulari i et confirmarem la reserva en menys de 24 hores. Per a grups de més de 8 persones, contacta'ns directament.</p>
+          </div>
+
+          <div class="form-card">
+            <form novalidate>
+              <div class="row g-3">
+
+                <div class="col-sm-6">
+                  <label class="form-label">Nom *</label>
+                  <input type="text" class="form-control" placeholder="El teu nom">
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">Cognoms *</label>
+                  <input type="text" class="form-control" placeholder="Els teus cognoms">
+                </div>
+
+                <div class="col-sm-6">
+                  <label class="form-label">Telèfon *</label>
+                  <input type="tel" class="form-control" placeholder="+34 600 000 000">
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">Correu electrònic *</label>
+                  <input type="email" class="form-control" placeholder="el.teu@email.com">
+                </div>
+
+                <div class="col-sm-4">
+                  <label class="form-label">Data *</label>
+                  <input type="date" class="form-control" id="reservationDate">
+                </div>
+                <div class="col-sm-4">
+                  <label class="form-label">Hora *</label>
+                  <select class="form-select">
+                    <option value="">Selecciona</option>
+                    <optgroup label="Migdia">
+                      <option>13:00</option>
+                      <option>13:30</option>
+                      <option>14:00</option>
+                      <option>14:30</option>
+                      <option>15:00</option>
+                    </optgroup>
+                    <optgroup label="Vespre">
+                      <option>20:00</option>
+                      <option>20:30</option>
+                      <option>21:00</option>
+                      <option>21:30</option>
+                      <option>22:00</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="col-sm-4">
+                  <label class="form-label">Persones *</label>
+                  <select class="form-select">
+                    <option value="">Núm.</option>
+                    <option>1 persona</option>
+                    <option>2 persones</option>
+                    <option>3 persones</option>
+                    <option>4 persones</option>
+                    <option>5 persones</option>
+                    <option>6 persones</option>
+                    <option>7 persones</option>
+                    <option>8 persones</option>
+                    <option>+8 (contacta'ns)</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Menú preferit</label>
+                  <select class="form-select">
+                    <option value="">Opcional — selecciona menú</option>
+                    <option>Menú del dia</option>
+                    <option>Menú degustació 7 passos (55 €/persona)</option>
+                    <option>Menú degustació 10 passos (85 €/persona)</option>
+                    <option>Carta lliure</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Al·lèrgies o peticions especials</label>
+                  <textarea class="form-control" rows="3" placeholder="Intolerències, al·lèrgies, ocasió especial, taula preferida..."></textarea>
+                </div>
+
+                <div class="col-12 mt-2">
+                  <button type="submit" class="btn btn-gold-fill w-100" style="padding:0.9rem;font-size:.82rem;">
+                    Confirmar sol·licitud de reserva
+                  </button>
+                  <p class="form-note">
+                    Rebràs una confirmació per email en menys de 24h. Les teves dades seran tractades de manera confidencial.
+                  </p>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0">
+          <h4 style="font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:1.5rem;">Informació útil</h4>
+
+          <div class="info-block mb-3 text-start" style="padding:1.5rem;">
+            <strong class="label-gold">Horaris</strong>
+            <p>Dl–Dv: 13:00–15:30 i 20:00–23:00<br>
+               Dissabte: 13:00–16:00 i 20:00–23:30<br>
+               Diumenge: 13:00–16:00<br>
+               <em>Dimarts tancat</em></p>
+          </div>
+
+          <div class="info-block mb-3 text-start" style="padding:1.5rem;">
+            <strong class="label-gold">On Som</strong>
+            <p>Palamós, Costa Brava<br>Girona, Catalunya<br>Fàcil aparcament proper</p>
+          </div>
+
+          <div class="info-block mb-3 text-start" style="padding:1.5rem;">
+            <strong class="label-gold">Grups</strong>
+            <p>Per a grups de més de 8 persones escriu-nos a <strong class="text-gold">info@elbongust.cat</strong> per a una proposta personalitzada.</p>
+          </div>
+
+          <div class="policy-box mt-3">
+            <h5>Política de reserves</h5>
+            <ul>
+              <li>Confirmació per email en menys de 24h</li>
+              <li>Cancel·lació gratuïta fins a 24h abans</li>
+              <li>Grups grans poden requerir dipòsit</li>
+              <li>Guardem la taula 15 minuts</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="brand-name mb-2">ElBonGust</div>
+          <p>Restaurant gastronòmic a Palamós, Costa Brava. Cuina creativa amb producte local i de temporada des del 2014.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6>Navegació</h6>
+          <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="qui-som.html">Qui Som</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="serveis.html">Serveis</a></li>
+            <li><a href="reserves.html">Reserves</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Horaris</h6>
+          <p>Dl – Dv: 13:00–15:30 i 20:00–23:00<br>Dissabte: 13:00–16:00 i 20:00–23:30<br>Diumenge: 13:00–16:00<br><em>Dimarts tancat</em></p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Contacte</h6>
+          <p>Palamós, Costa Brava<br>Girona, Catalunya<br>info@elbongust.cat</p>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex justify-content-between flex-wrap gap-2">
+        <span>© 2024 ElBonGust. Tots els drets reservats.</span>
+        <span>Dissenyat amb ♥ a la Costa Brava</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const dateInput = document.getElementById("reservationDate");
+    if (dateInput) {
+      dateInput.min = new Date().toISOString().split("T")[0];
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Carta – ElBonGust</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-hero::before {
+      background-image: url('https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=1400&q=80');
+    }
+    .nav-pills .nav-link {
+      background: transparent;
+      border: 1px solid rgba(201, 169, 110, 0.25);
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      padding: 0.55rem 1.3rem;
+      transition: all 0.25s;
+    }
+    .nav-pills .nav-link:hover  { border-color: var(--gold); color: var(--gold); }
+    .nav-pills .nav-link.active { background: var(--gold); border-color: var(--gold); color: var(--dark); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ElBon<span>Gust</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="qui-som.html">Qui Som</a></li>
+          <li class="nav-item"><a class="nav-link active" href="carta.html">La Carta</a></li>
+          <li class="nav-item"><a class="nav-link" href="serveis.html">Serveis</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
+          <li class="nav-item ms-2">
+            <a class="btn btn-gold-fill" href="reserves.html">Reserves</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero" style="margin-top:72px;">
+    <div class="hero-content">
+      <h1>La Carta</h1>
+      <div class="gold-bar"></div>
+      <p>Cuina de temporada amb producte local de la Costa Brava</p>
+    </div>
+  </header>
+
+  <section class="section-dark section-pad">
+    <div class="container">
+
+      <ul class="nav nav-pills gap-2 mb-5 flex-wrap" id="cartaTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#entrants">Entrants</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#principals">Principals</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#postres">Postres</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#degustacio">Menú Degustació</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#vins">Vins</button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+
+        <div class="tab-pane fade show active" id="entrants">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="menu-block">
+                <p class="category-title">Entrants de Mercat</p>
+                <div class="gold-divider"></div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Croquetes de bacallà de l'Empordà</div>
+                    <div class="dish-desc">Cremoses, crosta cruixent, bacallà fresc i julivert de casa. <span class="tag">Gluten</span> <span class="tag">Peixos</span></div>
+                  </div>
+                  <div class="dish-price">9,50 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Gamba de Palamós a la planxa</div>
+                    <div class="dish-desc">Fresca del port, sal marina i oli d'oliva verge extra arbequina. <span class="tag">Crustacis</span></div>
+                  </div>
+                  <div class="dish-price">18,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Carpaccio de vedella amb rúcula i parmesà</div>
+                    <div class="dish-desc">Vedella de la plana de Girona, rúcula silvestre i vinagreta de llimona. <span class="tag">Làctics</span></div>
+                  </div>
+                  <div class="dish-price">13,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Foie mi-cuit amb confitura de figa</div>
+                    <div class="dish-desc">Foie de canard, confitura de figa de temporada i pa de pagès torrat. <span class="tag">Gluten</span></div>
+                  </div>
+                  <div class="dish-price">15,50 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Tataki de tonyina amb sèsam i wasabi</div>
+                    <div class="dish-desc">Tonyina vermella marinada, ceba de Figueres confitada i maionesa de wasabi. <span class="tag">Peixos</span></div>
+                  </div>
+                  <div class="dish-price">16,00 €</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-block">
+                <p class="category-title">Compartir a la Taula</p>
+                <div class="gold-divider"></div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Taulell d'embotits i formatges catalans</div>
+                    <div class="dish-desc">Selecció artesana: fuet, llonganissa, formatge mató, serrat i blau. <span class="tag">Làctics</span></div>
+                  </div>
+                  <div class="dish-price">18,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Pa amb tomàquet i pernil ibèric</div>
+                    <div class="dish-desc">Pa de pagès torrat, tomàquet de penjar, all i pernil ibèric de gla. <span class="tag">Gluten</span></div>
+                  </div>
+                  <div class="dish-price">11,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Anxoves de l'Escala amb mantegues</div>
+                    <div class="dish-desc">Anxoves en oli d'oliva DOP Escala, mantegues artesanes i pa torrat. <span class="tag">Peixos</span> <span class="tag">Làctics</span></div>
+                  </div>
+                  <div class="dish-price">14,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Musclos al vapor amb vi blanc</div>
+                    <div class="dish-desc">Musclos de roca frescos, all, julivert i un raig de vi blanc de l'Empordà. <span class="tag">Mol·luscs</span></div>
+                  </div>
+                  <div class="dish-price">12,00 €</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="principals">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="menu-block">
+                <p class="category-title">De la Mar</p>
+                <div class="gold-divider"></div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Suquet de peix de roca</div>
+                    <div class="dish-desc">Peix fresc del dia, patates, tomàquet i sofregit tradicional. <span class="tag">Peixos</span></div>
+                  </div>
+                  <div class="dish-price">22,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Bacallà confitat amb romesco</div>
+                    <div class="dish-desc">Llom confitat a baixa temperatura, romesco de fruits secs i all negre. <span class="tag">Peixos</span> <span class="tag">Fruits secs</span></div>
+                  </div>
+                  <div class="dish-price">20,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Arròs de marisc de la Costa Brava</div>
+                    <div class="dish-desc">Gamba de Palamós, musclos, calamars i sofregit de tomàquet confitat. <span class="tag">Crustacis</span> <span class="tag">Mol·luscs</span></div>
+                  </div>
+                  <div class="dish-price">24,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Lluc a la romana amb aïoli de safrà</div>
+                    <div class="dish-desc">Lluc fresc arrebossat, aïoli de safrà i llimona confitada. <span class="tag">Peixos</span> <span class="tag">Gluten</span></div>
+                  </div>
+                  <div class="dish-price">19,00 €</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="menu-block">
+                <p class="category-title">De la Terra</p>
+                <div class="gold-divider"></div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Entrecot de vedella a la brasa</div>
+                    <div class="dish-desc">Vedella catalana, brasa d'alzina, patates rústiques i vi negre de l'Empordà. <span class="tag">Carn</span></div>
+                  </div>
+                  <div class="dish-price">26,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Mandonguilles amb sèpia i salsa americana</div>
+                    <div class="dish-desc">Recepta marinera de la Costa Brava, mandonguilles de porc ibèric. <span class="tag">Carn</span> <span class="tag">Mol·luscs</span></div>
+                  </div>
+                  <div class="dish-price">17,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Canelons de carn rostida</div>
+                    <div class="dish-desc">Carn de vedella i porc rostida, beixamel casolana i formatge gratinats. <span class="tag">Gluten</span> <span class="tag">Làctics</span></div>
+                  </div>
+                  <div class="dish-price">16,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Confit de pato amb figues i mel</div>
+                    <div class="dish-desc">Cuixa de pato confitada, figues de temporada i reducció de mel de garrigues. <span class="tag">Aviram</span></div>
+                  </div>
+                  <div class="dish-price">21,00 €</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="postres">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="menu-block">
+                <p class="category-title">Postres Casolans</p>
+                <div class="gold-divider"></div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Crema catalana de vainilla borbó</div>
+                    <div class="dish-desc">Infusionada amb vainilla de Madagascar, sucre cremat al moment i pell de taronja. <span class="tag">Làctics</span> <span class="tag">Ous</span></div>
+                  </div>
+                  <div class="dish-price">7,50 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Coulant de xocolata amb gelat de vainilla</div>
+                    <div class="dish-desc">Xocolata negra 70%, cor líquid calent i gelat artesà de la Reunió. <span class="tag">Gluten</span> <span class="tag">Ous</span></div>
+                  </div>
+                  <div class="dish-price">8,50 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Sorbets de fruita de temporada</div>
+                    <div class="dish-desc">Tres boles amb fruita de productors locals. Lleuger i ple de sabor natural. <span class="tag">Vegà</span> <span class="tag">Sense gluten</span></div>
+                  </div>
+                  <div class="dish-price">6,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Taulell de formatges catalans</div>
+                    <div class="dish-desc">Mató del Montseny, serrat del Pallars i blau de l'Urgell, amb mel i nous. <span class="tag">Làctics</span> <span class="tag">Fruits secs</span></div>
+                  </div>
+                  <div class="dish-price">12,00 €</div>
+                </div>
+
+                <div class="dish-row">
+                  <div>
+                    <div class="dish-name">Tiramisú de llimona i mascarpone</div>
+                    <div class="dish-desc">Versió cítrica del clàssic italià, amb bizcocho de savoiardi i llimona de Sóller. <span class="tag">Gluten</span> <span class="tag">Làctics</span></div>
+                  </div>
+                  <div class="dish-price">7,50 €</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="degustacio">
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-6">
+              <div class="degu-card">
+                <h4>Menú Experiència</h4>
+                <p class="small-note mb-3">7 passos gastronòmics</p>
+                <div class="d-flex align-items-baseline gap-2 mb-1">
+                  <span class="price-big">55 €</span>
+                  <span class="small-note">per persona</span>
+                </div>
+                <p class="small-note mb-3">Maridatge de vins +30 €</p>
+                <ol class="step-list">
+                  <li><span class="step-number">01</span>Benvinguda: snacks de temporada i pa de pagès</li>
+                  <li><span class="step-number">02</span>Aperitiu: gamba de Palamós al moment</li>
+                  <li><span class="step-number">03</span>Mar: carpaccio de peix de la lonja amb herbes</li>
+                  <li><span class="step-number">04</span>Terra: ravioli de bolets de tardor amb tòfona</li>
+                  <li><span class="step-number">05</span>Principal: suquet de peix de roca amb allioli</li>
+                  <li><span class="step-number">06</span>Prepostre: sorbet de cítrics amb gingebre</li>
+                  <li><span class="step-number">07</span>Postre: crema catalana o coulant de xocolata</li>
+                </ol>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="degu-card">
+                <h4>Menú Gran Experiència</h4>
+                <p class="small-note mb-3">10 passos gastronòmics</p>
+                <div class="d-flex align-items-baseline gap-2 mb-1">
+                  <span class="price-big">85 €</span>
+                  <span class="small-note">per persona</span>
+                </div>
+                <p class="small-note mb-3">Maridatge de vins +45 €</p>
+                <ol class="step-list">
+                  <li><span class="step-number">01</span>Benvinguda: petits bocats i mantegues artesanes</li>
+                  <li><span class="step-number">02</span>Aperitiu: gamba de Palamós i ostres de la badia</li>
+                  <li><span class="step-number">03</span>Mar I: carpaccio de peix amb herbes marines</li>
+                  <li><span class="step-number">04</span>Mar II: arròs cremós de marisc de la Costa Brava</li>
+                  <li><span class="step-number">05</span>Terra I: foie mi-cuit amb confitura de figa</li>
+                  <li><span class="step-number">06</span>Terra II: ravioli de bolets i tòfona amb brou</li>
+                  <li><span class="step-number">07</span>Principal I: bacallà confitat amb romesco</li>
+                  <li><span class="step-number">08</span>Principal II: vedella a la brasa amb vi negre</li>
+                  <li><span class="step-number">09</span>Prepostre: sorbet de llimona i menta</li>
+                  <li><span class="step-number">10</span>Postre: assortiment del pastisser</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="vins">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card-dark h-100 p-4">
+                <h5 class="card-title">Vins Blancs — DO Empordà</h5>
+                <p class="card-text">Blancs frescos i aromàtics elaborats amb garnatxa blanca i macabeu autòctons. Perfectes per a mariscos i peixos del nostre litoral.</p>
+                <p class="price-from">Des de 18 € / ampolla</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-dark h-100 p-4">
+                <h5 class="card-title">Vins Negres — DO Empordà i Catalunya</h5>
+                <p class="card-text">Negres de caràcter basats en garnatxa negra i carinyena, amb notes de fruita vermella i especiats. Ideals per a carns a la brasa.</p>
+                <p class="price-from">Des de 22 € / ampolla</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-dark h-100 p-4">
+                <h5 class="card-title">Caves i Espumosos</h5>
+                <p class="card-text">Caves del Penedès i Champagne per a les ocasions especials. Brut, brut nature i rosats per acompanyar aperitius i postres.</p>
+                <p class="price-from">Des de 25 € / ampolla</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="policy-box mt-5">
+        <h5>Informació sobre al·lèrgens</h5>
+        <ul>
+          <li>Els nostres plats poden contenir o estar en contacte amb: gluten, crustacis, ous, peixos, cacauets, soja, làctics, fruits de closca, api, mostassa, sèsam, mol·luscs i sulfits.</li>
+          <li>Si tens alguna al·lèrgia o intolerància, informa el nostre personal de sala <strong>abans</strong> de fer la comanda.</li>
+          <li>Adaptarem els plats a les teves necessitats en la mesura del possible.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="container">
+      <h2>T'agrada el que veus?</h2>
+      <p>Reserva la teva taula i vine a gaudir de la nostra cuina en persona.</p>
+      <a href="reserves.html" class="btn btn-gold-fill">Reserva ara</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="brand-name mb-2">ElBonGust</div>
+          <p>Restaurant gastronòmic a Palamós, Costa Brava. Cuina creativa amb producte local i de temporada des del 2014.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6>Navegació</h6>
+          <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="qui-som.html">Qui Som</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="serveis.html">Serveis</a></li>
+            <li><a href="reserves.html">Reserves</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Horaris</h6>
+          <p>Dl – Dv: 13:00–15:30 i 20:00–23:00<br>Dissabte: 13:00–16:00 i 20:00–23:30<br>Diumenge: 13:00–16:00<br><em>Dimarts tancat</em></p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Contacte</h6>
+          <p>Palamós, Costa Brava<br>Girona, Catalunya<br>info@elbongust.cat</p>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex justify-content-between flex-wrap gap-2">
+        <span>© 2024 ElBonGust. Tots els drets reservats.</span>
+        <span>Dissenyat amb ♥ a la Costa Brava</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

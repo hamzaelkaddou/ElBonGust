@@ -1,0 +1,10 @@
+# Resum Executiu
+El projecte ElBonGust s’ha creat amb la idea de demostrar com la tecnologia pot millorar el funcionament d’un restaurant d’alt nivell. En un sector tan exigent com el de la gastronomia, on es treballa amb productes de qualitat com la gamba de Palamós, la tòfona o el wagyu, no n’hi ha prou amb cuinar bé. També és molt important tenir una bona gestió, i aquí és on entra la tecnologia.
+Al principi, el restaurant tenia diversos problemes. Per exemple, la gestió dels productes es feia manualment amb fulls de càlcul, la xarxa era la mateixa per als clients i per als treballadors, i la pàgina web no estava connectada amb el que passava realment al restaurant. Això feia que tot fos menys eficient.
+Per solucionar aquests problemes, en aquest projecte es proposa crear un sistema informàtic complet. Aquest sistema es basa en dos parts principals: un ERP (Odoo) per gestionar el negoci, i una xarxa ben organitzada amb VLANs per separar els diferents usos i millorar la seguretat.
+Amb aquesta solució, el restaurant pot funcionar de manera molt més moderna i eficient. Per exemple, els cambrers poden prendre comandes amb una tauleta, aquestes arriben directament a la cuina, els clients poden reservar online, i la gerent pot controlar les vendes de manera ràpida i senzilla.
+# Abstract (English)
+The ElBonGust project shows how technology can improve the work of a high-level restaurant. In gastronomy, using good products is important, but good organization is also necessary. Technology helps to manage the restaurant better.
+At the beginning, the restaurant had some problems. Stock was managed with spreadsheets, the same network was used by customers and workers, and the website was not connected to the real activity of the restaurant. This made the system less efficient.
+To solve this, the project proposes a complete IT system. It includes an ERP (Odoo) to manage the business and a network with VLANs to improve security.
+With this system, the restaurant can work better. Waiters can take orders with a tablet, orders go directly to the kitchen, customers can book online, and the manager can control sales easily.

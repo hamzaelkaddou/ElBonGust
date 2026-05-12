@@ -1,39 +1,12 @@
-# =============================================================
-# ElBonGust — Configuració de xarxa (Netplan)
-# Fitxer: net/00-elbongust-network.yaml
-# Destí al servidor: /etc/netplan/00-elbongust-network.yaml
-# Sistema Operatiu: Ubuntu Server 26.04 LTS
-# =============================================================
-# Aplicar canvis:
-#   sudo netplan try        (prova 120 seg, reverteix si no es confirma)
-#   sudo netplan apply      (aplica permanentment)
-#   sudo netplan get        (mostra configuració activa)
-# =============================================================
-
 network:
   version: 2
   renderer: networkd
-
-  # -----------------------------------------------------------
-  # Interfície física principal
-  # Nota: substituir 'eth0' per l'identificador real de la
-  # interfície (consultar amb: ip link show)
-  # -----------------------------------------------------------
   ethernets:
     eth0:
       dhcp4: false
-      dhcp6: false
-      # Activar el suport per a trames jumbo si el switch ho suporta
-      # mtu: 9000
-
-  # -----------------------------------------------------------
-  # Sub-interfícies VLAN (802.1Q tagged)
-  # El switch gestionat ha de tenir el port del servidor
-  # configurat com a TRUNK amb totes les VLANs permeses.
-  # -----------------------------------------------------------
   vlans:
 
-    # VLAN 10 — Servidors (zona segura, accés restringit)
+    # VLAN 10 — Servidors
     vlan10:
       id: 10
       link: eth0
@@ -41,25 +14,25 @@ network:
         - 192.168.10.10/24
       nameservers:
         addresses:
-          - 127.0.0.1         # El propi servidor actua de DNS
-          - 8.8.8.8           # Fallback a DNS públic
+          - 127.0.0.1
+          - 8.8.8.8
         search:
           - elbongust.local
       routes:
         - to: default
-          via: 192.168.10.1   # Gateway principal (router/firewall)
+          via: 192.168.10.1
           metric: 100
 
-    # VLAN 20 — Staff i TPV (zona interna de personal)
+    # VLAN 20 — Staff i TPV
     vlan20:
       id: 20
       link: eth0
       addresses:
-        - 192.168.20.1/24     # El servidor actua de gateway per a la VLAN 20
+        - 192.168.20.1/24
 
-    # VLAN 30 — Clients Wi-Fi (zona pública, totalment aïllada)
+    # VLAN 30 — Clients Wi-Fi
     vlan30:
       id: 30
       link: eth0
       addresses:
-        - 192.168.30.1/24     # El servidor actua de gateway per a la VLAN 30
+        - 192.168.30.1/24

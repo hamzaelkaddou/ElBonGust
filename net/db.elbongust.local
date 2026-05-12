@@ -1,0 +1,38 @@
+; =============================================================
+; ElBonGust — Zona DNS interna: elbongust.local
+; Fitxer: net/db.elbongust.local
+; Servidor DNS: Bind9 a 192.168.10.10
+; =============================================================
+
+$TTL    604800          ; 7 dies de TTL per defecte
+
+@   IN  SOA     elbongust-srv.elbongust.local. admin.elbongust.local. (
+                2026040101  ; Serial (YYYYMMDDNN — incrementar amb cada canvi)
+                604800      ; Refresh: cada 7 dies
+                86400       ; Retry: cada 24h si falla el refresh
+                2419200     ; Expire: caducar als 28 dies
+                604800      ; Minimum TTL negatiu: 7 dies
+                )
+
+; --- Servidor de noms autoritat ---
+@           IN  NS      elbongust-srv.elbongust.local.
+
+; --- Registres A (nom → IP) ---
+
+; Servidor principal
+elbongust-srv   IN  A   192.168.10.10
+
+; Serveis interns (tots apunten al servidor, Nginx enruta internament)
+odoo            IN  A   192.168.10.10
+web             IN  A   192.168.10.10
+monitor         IN  A   192.168.10.10
+backup          IN  A   192.168.10.11     ; NAS de backup
+
+; Dispositius de staff amb IP estàtica
+tpv-barra       IN  A   192.168.20.10
+tablet-c01      IN  A   192.168.20.21
+tablet-c02      IN  A   192.168.20.22
+tablet-c03      IN  A   192.168.20.23
+impressora-cuina IN A   192.168.20.30
+impressora-barra IN A   192.168.20.31
+pc-gerent       IN  A   192.168.20.5

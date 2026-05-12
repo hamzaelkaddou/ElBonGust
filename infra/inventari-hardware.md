@@ -16,7 +16,7 @@
 | Mini-PC TPV | Intel NUC o similar, 8GB RAM | 1 | 192.168.20.10 | Darrere barra |
 | Impressora cuina | Tèrmica 80mm, tall automàtic, RJ45 | 2 | 192.168.20.30/31 | Cuina + Barra |
 | Calaix portamonedes | Apertura per senyal RJ11 del TPV | 1 | — | Barra |
-| Datàfon bancari | 4G + Ethernet, compatible Odoo IoT | 1 | DHCP VLAN20 | Barra |
+| Datàfon bancari | 4G + Ethernet, compatible Odoo  | 1 | DHCP VLAN20 | Barra |
 | PC Gerent | Ordinador sobretaula o portàtil | 1 | 192.168.20.5 | Despatx |
 | Codis QR taula | Vinils laminats, un per taula | 16 | — | Taules sala + terrassa |
 

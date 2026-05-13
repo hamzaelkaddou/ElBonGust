@@ -1,3 +1,46 @@
+<?php
+$host = "localhost";
+$dbname = "elbongust";
+$user = "elbongust_bd";
+$password = "Hamza@SMX2"; 
+
+$missatge_exit = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    $nom = $_POST['nom'];
+    $cognoms = $_POST['cognoms'];
+    $email = $_POST['email'];
+    $motiu = $_POST['motiu'];
+    $missatge = $_POST['missatge'];
+
+    $conn = mysqli_connect($host, $user, $password, $dbname);
+
+    if (!$conn) {
+        die("Error de connexió: " . mysqli_connect_error());
+    }
+
+    $sql = "INSERT INTO contactes (nom, cognoms, email, motiu, missatge) 
+            VALUES ('$nom', '$cognoms', '$email', '$motiu', '$missatge')";
+
+    if (mysqli_query($conn, $sql)) {
+        $missatge_exit = "Missatge enviat correctament.";
+        
+        $per_a = "info@elbongust.cat";
+        $assumpte = "Nou contacte de la web: $motiu";
+        $cos = "Has rebut un nou missatge:\n\nNom: $nom $cognoms\nEmail: $email\nMotiu: $motiu\nMissatge: $missatge";
+        $headers = "From: web@elbongust.cat";
+
+        mail($per_a, $assumpte, $cos, $headers);
+
+        $assumpte_client = "Hem rebut el teu missatge - ElBonGust";
+        $cos_client = "Hola $nom,\n\nHem rebut correctament el teu missatge. Et respondrem en menys de 24 hores.\n\nAtentament,\nL'equip d'ElBonGust.";
+        mail($email, $assumpte_client, $cos_client, $headers);
+    }
+
+    mysqli_close($conn);
+}
+?>
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -9,6 +52,12 @@
   <style>
     .page-hero::before {
       background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1400&q=80');
+    }
+    .alert-success { 
+        background-color: #d4af37; 
+        color: white; 
+        border: none; 
+        margin-bottom: 20px;
     }
   </style>
 </head>
@@ -26,7 +75,7 @@
           <li class="nav-item"><a class="nav-link" href="qui-som.html">Qui Som</a></li>
           <li class="nav-item"><a class="nav-link" href="carta.html">La Carta</a></li>
           <li class="nav-item"><a class="nav-link" href="serveis.html">Serveis</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contacte.html">Contacte</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacte.php">Contacte</a></li>
           <li class="nav-item ms-2">
             <a class="btn btn-gold-fill" href="reserves.html">Reserves</a>
           </li>
@@ -77,16 +126,6 @@
                 </span>
               </div>
             </li>
-            <li class="contact-row">
-              <div>
-                <strong class="label-gold">Xarxes socials</strong>
-                <div class="d-flex gap-2 mt-1">
-                  <a href="#" class="btn btn-gold btn-sm">Instagram</a>
-                  <a href="#" class="btn btn-gold btn-sm">Facebook</a>
-                  <a href="#" class="btn btn-gold btn-sm">TripAdvisor</a>
-                </div>
-              </div>
-            </li>
           </ul>
         </div>
 
@@ -95,35 +134,41 @@
             <h4>Envia'ns un missatge</h4>
             <p class="text-soft" style="font-size:.85rem;margin-bottom:2rem;">Resposta garantida en menys de 24 hores</p>
 
-            <form novalidate>
+            <?php if ($missatge_exit != ""): ?>
+                <div class="alert alert-success">
+                    <?php echo $missatge_exit; ?>
+                </div>
+            <?php endif; ?>
+
+            <form action="contacte.php" method="POST">
               <div class="row g-3">
                 <div class="col-sm-6">
                   <label class="form-label">Nom</label>
-                  <input type="text" class="form-control" placeholder="El teu nom">
+                  <input type="text" name="nom" class="form-control" placeholder="El teu nom" required>
                 </div>
                 <div class="col-sm-6">
                   <label class="form-label">Cognoms</label>
-                  <input type="text" class="form-control" placeholder="Els teus cognoms">
+                  <input type="text" name="cognoms" class="form-control" placeholder="Els teus cognoms" required>
                 </div>
                 <div class="col-12">
                   <label class="form-label">Correu electrònic</label>
-                  <input type="email" class="form-control" placeholder="el.teu@email.com">
+                  <input type="email" name="email" class="form-control" placeholder="el.teu@email.com" required>
                 </div>
                 <div class="col-12">
                   <label class="form-label">Motiu del contacte</label>
-                  <select class="form-select">
+                  <select name="motiu" class="form-select" required>
                     <option value="">Selecciona una opció</option>
-                    <option>Reserva de taula</option>
-                    <option>Esdeveniment privat</option>
-                    <option>Catering</option>
-                    <option>Àpat d'empresa</option>
-                    <option>Informació sobre la carta</option>
-                    <option>Altra consulta</option>
+                    <option value="Reserva de taula">Reserva de taula</option>
+                    <option value="Esdeveniment privat">Esdeveniment privat</option>
+                    <option value="Catering">Catering</option>
+                    <option value="Àpat d'empresa">Àpat d'empresa</option>
+                    <option value="Informació sobre la carta">Informació sobre la carta</option>
+                    <option value="Altra consulta">Altra consulta</option>
                   </select>
                 </div>
                 <div class="col-12">
                   <label class="form-label">Missatge</label>
-                  <textarea class="form-control" rows="4" placeholder="Explica'ns en què et podem ajudar..."></textarea>
+                  <textarea name="missatge" class="form-control" rows="4" placeholder="Explica'ns en què et podem ajudar..." required></textarea>
                 </div>
                 <div class="col-12 mt-1">
                   <button type="submit" class="btn btn-gold-fill w-100" style="padding:.85rem;">
@@ -141,60 +186,6 @@
       </div>
     </div>
   </section>
-
-  <section class="section-dark2" style="padding-bottom:0;">
-    <div class="container">
-      <div class="map-frame">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11763.22!2d3.128!3d41.848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bae1f5c0000001%3A0x1!2sPalam%C3%B3s%2C+Girona!5e0!3m2!1sca!2ses!4v1715000000000!5m2!1sca!2ses"
-          allowfullscreen="" loading="lazy"
-          title="Ubicació ElBonGust - Palamós, Costa Brava">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta-band">
-    <div class="container">
-      <h2>Prefereixes reservar directament?</h2>
-      <p>Ves al nostre formulari de reserves i assegura la teva taula en menys de 2 minuts.</p>
-      <a href="reserves.html" class="btn btn-gold-fill">Fer una reserva</a>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="brand-name mb-2">ElBonGust</div>
-          <p>Restaurant gastronòmic a Palamós, Costa Brava. Cuina creativa amb producte local i de temporada des del 2014.</p>
-        </div>
-        <div class="col-lg-2 col-md-6">
-          <h6>Navegació</h6>
-          <ul>
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="qui-som.html">Qui Som</a></li>
-            <li><a href="carta.html">La Carta</a></li>
-            <li><a href="serveis.html">Serveis</a></li>
-            <li><a href="reserves.html">Reserves</a></li>
-            <li><a href="contacte.html">Contacte</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h6>Horaris</h6>
-          <p>Dl – Dv: 13:00–15:30 i 20:00–23:00<br>Dissabte: 13:00–16:00 i 20:00–23:30<br>Diumenge: 13:00–16:00<br><em>Dimarts tancat</em></p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h6>Contacte</h6>
-          <p>Palamós, Costa Brava<br>Girona, Catalunya<br>info@elbongust.cat</p>
-        </div>
-      </div>
-      <div class="footer-bottom d-flex justify-content-between flex-wrap gap-2">
-        <span>© 2024 ElBonGust. Tots els drets reservats.</span>
-        <span>Dissenyat amb ♥ a la Costa Brava</span>
-      </div>
-    </div>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
